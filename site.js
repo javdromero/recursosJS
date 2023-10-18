@@ -3,7 +3,6 @@
 // AUXILIARES
 //============================================================================
 const sweetAlertPopupClass = "animate__animated animate__fadeIn animate__faster";
-const nombreSistema = "Sistema Aux";
 
 //============================================================================
 // FUNCIONES
@@ -240,7 +239,7 @@ function unBlockUI() {
 }
 
 function FechaHoraNow() {
-    return luxon.DateTime.now().setLocale('ec').toLocaleString(luxon.DateTime.DATETIME_FULL_WITH_SECONDS, { locale: 'es-ES' }) + '<br><p class="text-muted m-0 p-0">' + nombreSistema + '</p>'
+    return luxon.DateTime.now().setLocale('ec').toLocaleString(luxon.DateTime.DATETIME_FULL_WITH_SECONDS, { locale: 'es-ES' });
 }
 
 function TogglePassword(input, claseIcono) {
